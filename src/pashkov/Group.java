@@ -40,15 +40,15 @@ public class Group {
         student.getGroups().add(callGroupName());
     }
 
+    public void addStudent(Student student) {
+        student.getGroups().add(callGroupName());
+        getStudentList().add(student);
+    }
+
     public void addTeacher(String lastName, String firstName, String dateOfBirth, String contacts, double salaryPerWeek) {
         Teacher teacher = new Teacher(lastName, firstName, dateOfBirth, contacts, salaryPerWeek);
         getStudentList().add(teacher);
         teacher.getGroups().add(callGroupName());
-    }
-
-    public void addStudent(Student student) {
-        student.getGroups().add(callGroupName());
-        getStudentList().add(student);
     }
 
     public void printStudentList() {

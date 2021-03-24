@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Student {
 
-    private final String lastName;
-    private final String firstName;
-    private final String dateOfBirth;
-    private final String contacts;
+    private String lastName;
+    private String firstName;
+    private String dateOfBirth;
+    private String contacts;
     private final List<String> groups = new ArrayList<>();
 
     public List<String> getGroups() {
@@ -36,11 +36,4 @@ public class Student {
         return firstName;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public String getContacts() {
-        return contacts;
-    }
 }
